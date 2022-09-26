@@ -1,0 +1,33 @@
+--DML COMMANDS--SELECT, INSERT ,UPDATE,DELETE
+create table student(
+s_id int,
+s_name varchar(20),
+s_age int,
+s_marks int,
+s_city varchar(20),
+s_state varchar(20)
+);
+insert into student values(100,'neha',22,98,'azamgarh','UP');
+insert into student values(101,'X',22,88,'varanasi','UP');
+insert into student values(102,'Y',21,68,'noida','UP');
+insert into student values(103,'Z',20,78,'jaipur','rajasthan');
+insert into student values(104,'A',22,58,'mumbai','maharastra');
+insert into student values(105,'B',19,90,'surat','UP');
+insert into student values(106,'C',18,91,'pune','UP');
+insert into student values(107,'D',12,62,'bangalore','karnataka');
+insert into student values(108,'E',24,28,'mangalore','karnataka');
+insert into student values(109,'F',20,48,'azam','UP');
+
+select * from student
+
+SELECT * FROM student 
+
+SELECT s_id,s_name from STUDENT
+
+SELECT * FROM STUDENT WHERE s_id=100
+
+UPDATE STUDENT SET s_name= 'adi',s_age=23 where s_id= 109 and s_id=108;
+SELECT * FROM student 
+
+DELETE FROM STUDENT WHERE s_id=109; 
+SELECT * FROM student 
